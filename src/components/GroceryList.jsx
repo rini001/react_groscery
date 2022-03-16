@@ -1,13 +1,11 @@
 import React from 'react';
 
-export const GroceryList = ({ items }) => {
-    const handleDelete = (e) =>{
-        console.log(e.target.parentNode.remove());
-    }
+export const GroceryList = ({ items,handleDelete,id }) => {
+   
     return (
 		<li>
 			{items}
-			<button onClick={handleDelete}>delete</button>
+			<button onClick={()=>handleDelete(id)}>delete</button>
 		</li>
 	);
 };

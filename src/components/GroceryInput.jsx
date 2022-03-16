@@ -15,8 +15,7 @@ export const GroceryInput = ({ add, setAdd }) => {
 				onClick={() => {
 					if (value !== "") {
 						setAdd([...add, { value, id: uuidv4() }]);
-                        setValue("");
-                        
+                        setValue("");  
 					} else {
 						alert("enter value");
 					}
